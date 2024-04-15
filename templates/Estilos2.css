@@ -1,0 +1,197 @@
+html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinea verticalmente */
+    align-items: center; /* Alinea horizontalmente */
+    min-height: 100vh; /* 100% de la altura de la ventana del navegador */
+    background-image: url("../static/fondo3.png");
+    height: 80%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+     
+  } 
+  .head1{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 1%;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    margin-top: 65px;
+
+  }
+  .logo{
+    height: 100px; 
+    width: 300px; 
+    background-image: url('../static/Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    order: 2;
+    margin-left: auto;
+    margin-right: -70px;
+  
+    
+  }
+  .title1{  
+    width: 100%;
+    max-width: 500px; 
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: white;
+  }
+  .navegacion {
+      display: flex;
+      justify-content: flex-start; 
+      align-items: center; 
+      order: 1; 
+      margin-right: auto;
+  }
+  
+  .navegacion ul {
+      list-style: none;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      display: flex;
+  }
+  
+  .navegacion ul li {
+      margin-left: 25px;
+  }
+  
+  .navegacion ul li a {
+      text-decoration: none;
+      color: #f7f7f7;
+      align-content: flex-start;
+      position: relative;
+      display: inline-block;
+      padding: 7px 20px;
+      color: #fff; 
+      background-color: #d53d38; 
+      text-decoration: none;
+      overflow: hidden;
+      transition: color 0.35s;
+      border-radius: 15px;
+  }
+  
+  .navegacion ul li a:hover {
+      color: #000000;
+  }
+  .navegacion a::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 100%;
+    background: #e0ae23; 
+    transition: top 0.35s; 
+  }
+  
+  .navegacion a:hover::after {
+    top: 0;
+  }
+  
+  .navegacion a:hover {
+    color: #333; 
+  }
+  
+  .title2 {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+    margin-top: 80px;
+  }
+  
+  .title2 h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: grid;
+    grid-gap: 20px;
+    align-items: center;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+  }
+  input [type="text"]{
+    color: #000000;
+  }
+  input[type="text"]:focus,
+  input[type="number"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .botonAgregar {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+  }
+  
+  .botonAgregar:hover {
+    background-color: #0056b3;
+  }
+  .footer {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20%;
+    width: 100%;
+  }
+    
+  .footer-contacts {
+    text-align: right;
+    position: relative;
+    right: -36%;
+    margin-top: 10px;
+  }
+  .footer-icon i {
+    font-size: 24px; 
+  }
+  .footer-icon {
+    margin-left: 20px; 
+    color: #333; 
+    transition: color 0.3s; 
+    text-decoration: none; 
+  }
+    
+  .footer-icon:hover,
+  .footer-icon:focus {
+    color: #007bff; 
+  }
+  
+  @import 'path_to_font_awesome/css/font-awesome.min.css';
+  .copy-right{
+    position: relative;
+    left: -60%;
+  }
+  
